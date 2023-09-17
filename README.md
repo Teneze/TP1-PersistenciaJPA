@@ -17,7 +17,7 @@ Este practico me resultó muy desafiante ya que en lo personal no considero Java
 
 Mi mayor problema fue el error "Caused by: java.lang.NullPointerException: Cannot invoke "java.util.List.add(Object)" because "this.productos" is null", estaba teniendo conflictos en la Inicialización ya que por lo que entendí estaba intentando agregar un objeto a una lista (productos) que resultaba null, por lo que no se estaba inicializado correctamente. 
 
-Por lo cual, fui revisando las entidades especificas en el rango del problema ("Cliente", "Rubro" y "Pedido") y luego de observar mientras revisaba que cada relación sea congruente pude darme cuenta que luego de inicializar las listas me estaba faltando el @Builder.Default.
+Por lo cual, fui revisando las entidades especificas en el rango del problema ("Cliente", "Rubro" y "Pedido"). Luego de observar mientras revisaba que cada relación sea congruente pude darme cuenta que luego de inicializar las listas me estaba faltando el @Builder.Default.
 
 Luego de agregar esta notación pude realizar con alivio la ejecución del proyecto.
 
